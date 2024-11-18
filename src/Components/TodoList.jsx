@@ -20,6 +20,7 @@ function TodoList() {
   const handleEdit = (todo) =>{
     setEditTodo(todo)
   }
+  console.log("Commit Final")
   return (
     <>
       <Form currentTodo = {editTodo}/>

@@ -5,7 +5,7 @@ import { addTodoApi, deleteTodoApi, fetchTodoApi, updateTodoApi } from "./Sagase
 // FETCH TODO SAGA
 function* fetchTodoSaga() {
     try {
-        const response = yield call(fetchTodoApi); 
+        const response = yield call(fetchTodoApi);   
         console.log(response.data, "response");
         yield put({ type: FETCH_TODO_SUCCESS, payload: response.data });
     } catch (error) {
@@ -15,6 +15,11 @@ function* fetchTodoSaga() {
 // ADD TODO SAGA
 function* addTodoSaga(action){
     try{
+        // appolo client setup
+        // const demoResponse = yield call(client.mutete,{
+        //     mutation:functionCall,
+        //     variables:action.payload
+        // })
         console.log("action" , action)
         const response = yield call(addTodoApi,action.payload)
         yield put({type:ADD_TODO_SUCCESS,payload:response.data})

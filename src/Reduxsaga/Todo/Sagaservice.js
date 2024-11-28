@@ -30,3 +30,9 @@ export const updateTodoApi = async(todoData)=>{
     const response = await axios.put(API_URL + "/" + id,formData)
     return response
 }
+
+
+
+// apolo client query
+
+// export const functionCall = gql` Examplequery`

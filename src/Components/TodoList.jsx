@@ -27,13 +27,13 @@ function TodoList() {
 
     {
       todos.length > 0 ?<div className="container mt-3">
-      <table class="table">
+      <table class="table table-striped table-dark mt-3">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Description</th>
-            <th scope="col">Action</th>
+            <th scope="col" className='text-center'>#</th>
+            <th scope="col" className='text-center'>Title</th>
+            <th scope="col" className='text-center'>Description</th>
+            <th scope="col" className='text-center'>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -41,13 +41,13 @@ function TodoList() {
             todos.map((todo, index) => {
               return <>
                 <tr>
-                  <td>{index + 1}</td>
-                  <td>
+                  <td className='text-center'>{index + 1}</td>
+                  <td className='text-center'>
                     {todo?.title}
                   </td>
-                  <td>{todo.description}</td>
-                  <td>
-                    <button className='btn btn-success' onClick={() => handleEdit(todo)}>Edit</button> ||
+                  <td className='text-center'>{todo.description}</td>
+                  <td className='text-center'>
+                    <button className='btn btn-success' onClick={() => handleEdit(todo)}>Edit</button> ||&nbsp;
                     <button className='btn btn-danger' onClick={() => handleDelete(todo._id)}>Delete</button>
                   </td>
                 </tr>

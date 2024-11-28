@@ -40,3 +40,8 @@ export const deleteTodoFailure = (id) =>({type:DELETE_TODO_FAILURE,payload:id})
 export const updateTodoRequest = (todo) =>({type:DELETE_TODO_REQUEST,payload:todo})
 export const updateTodoSuccess = (todo) =>({type:DELETE_TODO_SUCCESS,payload:todo})
 export const updateTodoFailure = (todo) =>({type:DELETE_TODO_FAILURE,payload:todo})
+
+
+// export const loginRequest = "Login_Action_Request"
+// export const loginSuccess = "Login_Action_Success"
+// export const loginFailure = "Login_Action_Failure"

@@ -20,11 +20,9 @@ function TodoList() {
   const handleEdit = (todo) =>{
     setEditTodo(todo)
   }
-  console.log("Commit Final")
   return (
     <>
       <Form currentTodo = {editTodo}/>
-
     {
       todos.length > 0 ?<div className="container mt-3">
       <table class="table table-striped table-dark mt-3">
